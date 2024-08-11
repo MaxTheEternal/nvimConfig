@@ -7,6 +7,7 @@ return {
 	},
 	config = function()
 		require("go").setup()
+		require("go.format").gofmt() -- gofmt only
 		require("go.format").goimports() -- goimports + gofmt
 		vim.api.nvim_create_user_command("GoTestCover", "!go test -cover", { bang = true })
 		vim.api.nvim_create_user_command("GoTestBenchmark", "!go test -bench=.", { bang = true })
