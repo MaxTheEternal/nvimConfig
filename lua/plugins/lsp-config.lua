@@ -181,8 +181,6 @@ return -- LSP Plugins
 				--    https://github.com/pmizio/typescript-tools.nvim
 				--
 				-- But for many setups, the LSP (`tsserver`) will work just fine
-				tsserver = {},
-				--
 
 				lua_ls = {
 					-- cmd = {...},
@@ -215,7 +213,6 @@ return -- LSP Plugins
 				"stylua", -- Used to format Lua code
 				"gopls",
 				"gofumpt",
-				"tsserver",
 			})
 			require("mason-tool-installer").setup({ ensure_installed = ensure_installed })
 
